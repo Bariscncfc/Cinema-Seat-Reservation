@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://www.flaticon.com/svg/vstatic/svg/738/738096.svg?token=exp=1611819512~hmac=c8ccbd833e9c43553536c43fafe7b34a"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sinema Bilet Rezervasyon</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <label>Film Seçiniz:</label>
+      <select id="movie">
+        <option value="8">Buz Devri 3</option>
+        <option value="10">Inception</option>
+        <option value="12">300 Spartalı</option>
+        <option value="16">Ben efsaneyim</option>
+        <option value="16">Cesur Yürek</option>
+        <option value="16">Eşkıya</option>
+      </select>
+      <div class="movie-time">
+        <label>Saat Seçiniz:</label>
+        <select id="movie-time">
+          <option value="8">08.00-10.00</option>
+          <option value="10">10.00-12.00</option>
+          <option value="12">12.00-14.00</option>
+          <option value="16">14.00-16.00</option>
+          <option value="16">16.00-18.00</option>
+          <option value="16">18.00-20.00</option>
+        </select>
+      </div>
+      <div class="ticket">
+        <label>Bilet Seçiniz:</label>
+        <select id="ticket">
+          <option value="12">Öğrenci (12 Tl)</option>
+          <option value="22">Yetişkin (22 Tl)</option>
+        </select>
+      </div>
+    </div>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+    <p class="text">
+      Şeçimin <span id="count">0</span> koltukların ücreti TL
+      <span id="total">0</span>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
